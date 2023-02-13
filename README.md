@@ -14,4 +14,4 @@ Press spacebar to set trap. Do not let the hunter touch you.
 ![screenname](https://user-images.githubusercontent.com/61526855/213593036-831f325a-be44-4f84-8337-3eb711282a9e.PNG)
 ![intro](https://user-images.githubusercontent.com/61526855/213593122-c8f8beb2-ed86-4379-bf0c-607c59b86027.PNG)
 
-Gameplay Video: https://studio.youtube.com/video/-tIO_RaB2ew/edit
+Gameplay Video: https://www.youtube.com/watch?v=-tIO_RaB2ew&ab_channel=LinaLi
