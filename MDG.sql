@@ -1,0 +1,28 @@
+CREATE DATABASE IF NOT EXISTS MDG;
+USE MDG;
+
+-- table 1: player
+CREATE TABLE IF NOT EXISTS player
+(playerId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(15) UNIQUE
+) ENGINE = INNODB;
+
+-- table 2: myHighScore 
+CREATE TABLE IF NOT EXISTS myHighScore
+(myHighScoreId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+playerId INT,
+score INT,
+CONSTRAINT myHighScore_fk_player
+FOREIGN KEY (playerId)
+	REFERENCES player(playerId)
+) ENGINE = INNODB;
+
+-- table 3: highScore 
+CREATE TABLE IF NOT EXISTS highScore
+(highScoreId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+playerId INT,
+score INT,
+CONSTRAINT highScore_fk_player
+FOREIGN KEY (playerId)
+	REFERENCES player(playerId)
+) ENGINE = INNODB;
